@@ -5,46 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bildet Stiftet Banden!</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    :root {
+      --bg: #f4faff;
+      --text: #1e1e1e;
+      --accent: #0077cc;
+      --muted: #666;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background-color: #a3d3e4;
-      color: #222;
     }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
     header, main, footer {
       max-width: 960px;
       margin: auto;
       padding: 2rem;
     }
+
     header h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
+      font-size: 2.75rem;
+      margin-bottom: 0.5rem;
     }
+
     header p {
       font-size: 1.25rem;
+      margin-bottom: 0.5rem;
     }
+
     a {
-      color: #004ea2;
+      color: var(--accent);
+      text-decoration: none;
     }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     .image-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1rem;
-      margin: 2rem 0;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin: 3rem 0;
     }
+
     .image-grid img {
       width: 100%;
       height: auto;
-      border-radius: 4px;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease;
     }
+
+    .image-grid img:hover {
+      transform: scale(1.02);
+    }
+
+    h2 {
+      margin-top: 3rem;
+      font-size: 1.75rem;
+      color: var(--accent);
+    }
+
+    ul {
+      margin-top: 1rem;
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
     footer {
       background-color: #eaeaea;
-      padding: 1rem;
       text-align: center;
-    }
-    h2 {
-      margin-top: 2rem;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
     }
   </style>
 </head>
@@ -54,15 +100,22 @@
     <p><strong>Ein Workshop, um träge Themen in Bewegung zu setzen</strong></p>
     <p>Deutscher Stiftungstag 2025, Wiesbaden – 
       <a href="https://www.stiftungstag.org/programm?session=cs-azurit-foundation" target="_blank">
-        https://www.stiftungstag.org/programm?session=cs-azurit-foundation</a><br>
-      Stand: 28.04.2025
+        www.stiftungstag.org/programm</a><br>
+      <small>Stand: 28.04.2025</small>
     </p>
     <h2>Workshop</h2>
   </header>
 
   <main>
     <div class="image-grid">
-      <img src="e08389e1-8b70-4d95-90a3-613c007420d7.png" alt="Workshop Karten Raster">
+      <img src="A5-1-h.png" alt="A5 horizontal 1">
+      <img src="A5-1-v.png" alt="A5 vertikal 1">
+      <img src="A5-2-h.png" alt="A5 horizontal 2">
+      <img src="A5-2-v.png" alt="A5 vertikal 2">
+      <img src="A5-3-h.png" alt="A5 horizontal 3">
+      <img src="A5-3-v.png" alt="A5 vertikal 3">
+      <img src="1.png" alt="Bild 1">
+      <img src="2.png" alt="Bild 2">
     </div>
 
     <h2>Weitere Vorhaben</h2>
