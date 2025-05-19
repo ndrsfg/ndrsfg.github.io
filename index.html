@@ -7,65 +7,81 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 2em;
-      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      background-color: #a3d3e4;
       color: #222;
     }
-    header, footer {
-      background-color: #eaeaea;
-      padding: 1em;
-      text-align: center;
-    }
-    main {
-      max-width: 800px;
+    header, main, footer {
+      max-width: 960px;
       margin: auto;
-      background: white;
-      padding: 2em;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 2rem;
     }
-    h1, h2 {
-      color: #333;
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    header p {
+      font-size: 1.25rem;
     }
     a {
-      color: #0066cc;
+      color: #004ea2;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    footer {
+      background-color: #eaeaea;
+      padding: 1rem;
+      text-align: center;
+    }
+    h2 {
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1><s>Bildet</s> Stiftet <strong>Banden!</strong></h1>
+    <p><strong>Ein Workshop, um träge Themen in Bewegung zu setzen</strong></p>
+    <p>Deutscher Stiftungstag 2025, Wiesbaden – 
+      <a href="https://www.stiftungstag.org/programm?session=cs-azurit-foundation" target="_blank">
+        https://www.stiftungstag.org/programm?session=cs-azurit-foundation</a><br>
+      Stand: 28.04.2025
+    </p>
+    <h2>Workshop</h2>
+  </header>
 
-<header>
-  <h1>Bildet Stiftet Banden!</h1>
-  <p>Ein Workshop, um träge Themen in Bewegung zu setzen</p>
-</header>
+  <main>
+    <div class="image-grid">
+      <img src="e08389e1-8b70-4d95-90a3-613c007420d7.png" alt="Workshop Karten Raster">
+    </div>
 
-<main>
-  <h2>Workshop</h2>
-  <p><strong>Veranstaltung:</strong> Deutscher Stiftungstag 2025, Wiesbaden</p>
-  <p><strong>Weitere Infos:</strong> <a href="https://www.stiftungstag.org/programm?session=cs-azurit-foundation" target="_blank">stiftungstag.org/programm</a></p>
-  <p><strong>Stand:</strong> 28.04.2025</p>
+    <h2>Weitere Vorhaben</h2>
+    <ul>
+      <li>Oral Reporting: <a href="https://www.oralreporting.info" target="_blank">www.oralreporting.info</a></li>
+      <li>Backchannel: <a href="https://www.backchannel.it" target="_blank">www.backchannel.it</a></li>
+    </ul>
 
-  <h2>Weitere Vorhaben</h2>
-  <ul>
-    <li><a href="https://www.oralreporting.info" target="_blank">Oral Reporting</a></li>
-    <li><a href="https://www.backchannel.it" target="_blank">Backchannel</a></li>
-  </ul>
+    <h2>Woher kommt das Angebot</h2>
+    <p>
+      Ein Angebot von Lea Buck, Geschäftsführerin, Azurit Foundation, Andreas Geis, Leiter Förderung, Stiftung für Kunst, Kultur und Geschichte, 
+      Helena Knorr, Senior Programmmanagerin, Unternehmerstiftung für Chancengerechtigkeit, Rahel Stauffiger, Projektleiterin Prozesse, 
+      Stiftung für Kunst, Kultur und Geschichte, Michaela Wintrich, Geschäftsleitung (in Elternzeit), Unternehmerstiftung für Chancengerechtigkeit | 
+      Co-Leiterin Arbeitskreis Förderstiftungen, Bundesverband Deutscher Stiftungen
+    </p>
+  </main>
 
-  <h2>Woher kommt das Angebot</h2>
-  <p>Ein Angebot von:</p>
-  <ul>
-    <li>Lea Buck, Geschäftsführerin, Azurit Foundation</li>
-    <li>Andreas Geis, Leiter Förderung, Stiftung für Kunst, Kultur und Geschichte</li>
-    <li>Helena Knorr, Senior Programmmanagerin, Unternehmerstiftung für Chancengerechtigkeit</li>
-    <li>Rahel Stauffiger, Projektleiterin Prozesse, Stiftung für Kunst, Kultur und Geschichte</li>
-    <li>Michaela Wintrich, Geschäftsleitung (in Elternzeit), Unternehmerstiftung für Chancengerechtigkeit | Co-Leiterin Arbeitskreis Förderstiftungen, Bundesverband Deutscher Stiftungen</li>
-  </ul>
-</main>
-
-<footer>
-  <p>&copy; 2025 Workshopteam</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 Workshopteam</p>
+  </footer>
 </body>
 </html>
